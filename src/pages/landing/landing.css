@@ -3,11 +3,24 @@
 .header {
   height: 100vh;
   display: flex;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+}
+
+.container-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 93vh;
+  width: 90%;
+}
+
+.container-info-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title-header {
@@ -19,19 +32,47 @@
 }
 
 .subtitle-header {
-    color: white;
-    letter-spacing: 1px;
-    opacity: 0.9;
-    transition: color 0.3s ease, transform 0.2s ease;
+  color: white;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.title-header:hover, .subtitle-header:hover {
+.title-header:hover,
+.subtitle-header:hover {
   transform: scale(1.05);
   text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
 .text-header {
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container-img-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-img {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  height: 60vh;
+  width: 60vh;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.box-img:hover {
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); 
+  transform: scale(1.05); 
+  border: 2px solid rgba(255, 255, 255, 0.2); 
 }
 
 /* About me Section */

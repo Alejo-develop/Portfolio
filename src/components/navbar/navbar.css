@@ -1,0 +1,39 @@
+.navbar-socialMedia-section {
+  height: 7vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.div-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-nav {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.533);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.div-social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  padding-right: 40px;
+}
+
+.icon {
+  color: rgba(255, 255, 255, 0.533);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icon:hover, .item-nav:hover {
+  color: var(--secondary-color);
+  transform: scale(1.2); 
+}

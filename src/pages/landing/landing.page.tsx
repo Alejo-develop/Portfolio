@@ -1,5 +1,5 @@
-import HeaderCompoent from './components/header.component';
-import './landing.css'
+import HeaderCompoent from "./components/header.component";
+import "./landing.css";
 
 export default function LandingPage() {
   return (
