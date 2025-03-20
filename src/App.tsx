@@ -1,9 +1,9 @@
-function App() {
-  return (
-    <>
-      <div></div>
-    </>
-  );
-}
+import { createBrowserRouter } from "react-router-dom";
+import LandingPage from "./pages/landing/landing.page";
 
-export default App;
+export const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+]);
