@@ -7,13 +7,13 @@ const NavbarComponent = () => {
     <div className="navbar-socialMedia-section">
       <div></div>
       <nav className="div-nav">
-        <a href="aboutme" className="item-nav">
+        <a href="#aboutme" className="item-nav">
           ABOUT ME
         </a>
-        <a href="myskills" className="item-nav">
+        <a href="#myskills" className="item-nav">
           MY SKILLS
         </a>
-        <a href="projects" className="item-nav">
+        <a href="#projects" className="item-nav">
           PROJECTS
         </a>
       </nav>

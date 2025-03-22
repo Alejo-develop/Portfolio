@@ -3,7 +3,6 @@
 .header {
   height: 100vh;
   display: flex;
-  background: var(--primary-color);
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -179,4 +178,40 @@
   }
 }
 
+
 /* About me Section */
+.aboutMe-div{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerParagraph-aboutMe{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px
+}
+
+.title-aboutMe {
+  color: white;
+  font-size: 55px;
+  padding: 35px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.title-aboutMe:hover {
+  transform: scale(1.05);
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.text-aboutMe {
+  text-align: center;
+  width: 40rem;
+  color: white;
+  font-size: 20px;
+}
