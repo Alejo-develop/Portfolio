@@ -1,3 +1,5 @@
+import { StudiesInterface } from "../interfaces/studies.interface";
+
 export const aboutMeData = {
   title: "Who am I?",
   paragraph1:
@@ -7,3 +9,14 @@ export const aboutMeData = {
   paragraph3:
     "By integrating these skills, I focus on delivering efficient and scalable web and mobile solutions. Whether working autonomously or within a collaborative team environment, I remain dedicated to consistently delivering high-quality impactful projects.",
 };
+
+export const studies: StudiesInterface[] = [
+  {
+    title: "Riwi",
+    studie: "FullStack Developer",
+    img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1742663052/riwi_io_logo_a7c6gg.jpg",
+    duration: "1 Year",
+    studieType: "Bootcamp",
+    background: "Riwi is a bootcamp where I learned to program, I had the opportunity to do many projects both in Front-end and Back-end, and also as a Mobile developer. There I worked with many teams while learning about agile working methodologies, architecture patterns and in general how to work in the programming world.",
+  },
+];
