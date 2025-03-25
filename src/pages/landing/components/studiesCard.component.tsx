@@ -48,7 +48,7 @@ const StyledWrapper = styled.div`
     background-color: rgba(31, 41, 55, 1);
     padding: 0.6rem;
     transition: all 0.3s ease-in-out;
-    cursor: pointer
+    cursor: pointer;
   }
 
   .card:hover {
@@ -148,6 +148,154 @@ const StyledWrapper = styled.div`
     height: 4.5rem;
     justify-content: space-evenly;
   }
+
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 280px;
+    }
+
+    .image {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .name {
+      font-size: 0.8rem;
+    }
+
+    .function {
+      font-size: 0.6rem;
+    }
+
+    .stats {
+      width: 7rem;
+      font-size: 0.6rem;
+    }
+
+    .stats {
+      height: 3rem;
+    }
+
+    .background-text {
+      font-size: 10px;
+    }
+
+    .div-stats {
+      width: 3.5rem;
+    }
+
+    .flex {
+      margin: 0 4px;
+      width: 3rem;
+    }
+
+    .background {
+      height: 1rem;
+    }
+
+    .info {
+      height: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+      .card {
+        width: 280px;
+      }
+
+      .image {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      .name {
+        font-size: 0.8rem;
+      }
+
+      .function {
+        font-size: 0.6rem;
+      }
+
+      .stats {
+        width: 7rem;
+        font-size: 0.6rem;
+      }
+
+      .stats {
+        height: 3rem;
+      }
+
+      .background-text {
+        font-size: 10px;
+      }
+
+      .div-stats {
+        width: 3.5rem;
+      }
+
+      .flex {
+        margin: 0 4px;
+        width: 3rem;
+      }
+
+      .background {
+        height: 1rem;
+      }
+
+      .info {
+        height: 3rem;
+      }
+  }
+
+  @media screen and (min-height: 1100px) {
+      .card {
+        width: 380px;
+      }
+
+      .image {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      .name {
+        font-size: 1.2rem;
+      }
+
+      .function {
+        font-size: 0.8rem;
+      }
+
+      .stats {
+        width: 7rem;
+        font-size: 0.7rem;
+      }
+
+      .stats {
+        height: 4rem;
+      }
+
+      .background-text {
+        font-size: 15px;
+      }
+
+      .div-stats {
+        width: 3.5rem;
+      }
+
+      .flex {
+        margin: 0 4px;
+        width: 3rem;
+      }
+
+      .background {
+        height: 8rem;
+      }
+
+      .info {
+        height: 4rem;
+      }
+  }
+}
 `;
 
 export default StudiesCardComponent;
