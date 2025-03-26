@@ -71,7 +71,7 @@ const CoverParticles = () => {
                                 density: {
                                     enable: true,
                                 },
-                                value: 30,
+                                value: 15,
                             },
                             opacity: {
                                 value: 0.5,

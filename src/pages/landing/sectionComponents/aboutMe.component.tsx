@@ -1,5 +1,5 @@
 import { aboutMeData, studies } from "../../../utils/data";
-import StudiesCardComponent from "../components/studiesCard.component";
+import StudiesCardComponent from "../components/studiesCard/studiesCard.component";
 
 const AboutMeComponent = () => {
   return (

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StudiesInterface } from "../../../interfaces/studies.interface";
+import { StudiesInterface } from "../../../../interfaces/studies.interface";
 
 interface StudiesCardProps extends StudiesInterface {}
 
