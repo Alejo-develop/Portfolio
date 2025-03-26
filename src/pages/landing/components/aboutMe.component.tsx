@@ -1,4 +1,4 @@
-import { aboutMeData, studies } from "../../../utils/aboutMe.data";
+import { aboutMeData, studies } from "../../../utils/data";
 import StudiesCardComponent from "./studiesCard.component";
 
 const AboutMeComponent = () => {
