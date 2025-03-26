@@ -1,6 +1,6 @@
-import AboutMeComponent from "./components/aboutMe.component";
-import HeaderCompoent from "./components/header.component";
-import SkillsSectionComponent from "./components/skills.component";
+import AboutMeComponent from "./sectionComponents/aboutMe.component";
+import HeaderCompoent from "./sectionComponents/header.component";
+import SkillsSectionComponent from "./sectionComponents/skills.component";
 import "./landing.css";
 
 export default function LandingPage() {
