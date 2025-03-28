@@ -472,5 +472,5 @@
 
 .title-mySkills:hover {
   transform: scale(1.05);
-  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.55);
 }
