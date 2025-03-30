@@ -33,3 +33,16 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 600px) {
+  .skills-container {
+    width: 57%;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  
+  .title-skills-container{
+    font-size: 14px;
+  }
+}
+
+

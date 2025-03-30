@@ -4,7 +4,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 
   /* Body */
-  width: 14rem;
+  width: 33.3%;
   height: 11rem;
   display: flex;
   justify-content: center;
@@ -32,4 +32,51 @@
   width: 4.5rem;
   height: 4.5rem;
   color: white;
+}
+
+@media screen and (max-width: 1300px){
+  .skill-card{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .skill-card{
+    width: 50%;
+  }
+
+  .skill-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .skill-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill-card {
+    width: 100%;
+    height: 7rem;
+  }
+
+  .skill-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .skill-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .skill-name {
+    font-size: 12px;
+  }
 }
