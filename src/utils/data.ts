@@ -42,11 +42,11 @@ export const frontendSkills: SkillsInterface[] = [
     name: 'React'
   },
   {
-    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743001666/nextjslogo_vu960n.png',
+    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743393318/nextjsW_vuolf9.png',
     name: 'Next Js'
   },
   {
-    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743001731/tailwindcsslogo-removebg-preview_c0u21r.png',
+    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743393257/tailwindcssW_pojvey.png',
     name: 'Tailwind Css'
   },
   {
@@ -65,15 +65,15 @@ export const backendSkills: SkillsInterface[] = [
     name: 'Node Js'
   },
   {
-    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743001666/nestjslogo-removebg-preview_xurdz7.png',
+    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743392856/NestjsWR_in7zsz.png',
     name: 'Nest js'
   },
   {
-    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743001666/mongodblogo-removebg-preview_jsenzi.png',
+    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743393060/MongoDbW_hxdqux.png',
     name: 'Mongo Db'
   },
   {
-    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743001666/mysqllogo-removebg-preview_zrxmoq.png',
+    icon: 'https://res.cloudinary.com/djqwo9izl/image/upload/v1743393147/mysqlW_f2247u.png',
     name: 'MySQL & Sql lite'
   }
 ] 

@@ -11,7 +11,7 @@ const SkillCardComponent = ({ icon, name, index }: SkillCardProps) => {
     <div key={index} className="skill-card">
       <div>
         {typeof icon === "string" ? (
-          <img src={icon} alt={name} className="skill-img"/>
+          <img src={icon} alt={name} className={name === 'Mongo Db' ? 'mongodbImg' :"skill-img"}/>
         ) : (
           <FontAwesomeIcon icon={icon} className="skill-icon"/>
         )}
