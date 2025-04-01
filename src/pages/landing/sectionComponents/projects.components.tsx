@@ -1,3 +1,4 @@
+import { projects } from "../../../utils/data";
 import ProjectCardComponent from "../components/projectCard/projectCard.component";
 
 const ProjectsSectionComponent = () => {
@@ -6,7 +7,16 @@ const ProjectsSectionComponent = () => {
       <h1 className="projects-title">PROJECTS</h1>
 
       <div className="container-projects">
-        <ProjectCardComponent />
+        {projects.map((item, index) => (
+          <ProjectCardComponent
+            index={index}
+            name={item.name}
+            description={item.description}
+            img={item.img}
+            type={item.type}
+            link={item.link}
+          />
+        ))}
       </div>
     </div>
   );
