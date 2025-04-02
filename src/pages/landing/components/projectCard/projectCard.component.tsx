@@ -13,7 +13,7 @@ const ProjectCardComponent = ({index, name, description, img, link, type}: Proje
 
       <div className="project-section-info">
         <div className="sectionPreview-project-Card">
-            <img src={typeof img === 'string' ? img : ''} alt="" />
+            {type === 'web' ? (<img className="img-web-project" src={typeof img === 'string' ? img : ''} alt="" />) : (<div></div>)}
         </div>
         <div className="sectionInfo-Project-card">
             <p className="description-project-card">{description}</p>

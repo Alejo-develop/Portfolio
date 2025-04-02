@@ -91,7 +91,7 @@ export const projects: ProjectInterface[] = [
     name: "VorteXtream",
     description:
       "Vortextream is a website that covers most of the audiovisual content consumed today. From reviews and information on your favorite movies or anime, to live streaming with your favorite twitch streamers!",
-    img: "",
+    img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1743568894/Vortextream_heerfi.png",
     link: "",
     type: "web",
   },
