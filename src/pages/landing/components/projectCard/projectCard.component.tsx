@@ -20,8 +20,8 @@ const ProjectCardComponent = ({index, name, description, img, link, type}: Proje
         </div>
       </div>
 
-      <div>
-        {type === "mobile" ? (<GitHubBoxComponent typeRepository="Repository" repository={link}/>) : (<div></div>)}
+      <div className="links-projects-div">
+        <GitHubBoxComponent typeItem={type === "mobile" ? "check it on gitHub" : "Website"} text={type === "mobile" ? "Repository" : "Go to"} repository={link}/>
       </div>
     </div>
   );

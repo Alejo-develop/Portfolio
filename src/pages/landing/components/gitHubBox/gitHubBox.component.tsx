@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 interface GitHubBoxProps {
-  typeRepository: string;
+  typeItem: string;
+  text: string;
   repository: string;
 }
 
-const GitHubBoxComponent = ({ typeRepository, repository }: GitHubBoxProps) => {
+const GitHubBoxComponent = ({ typeItem: typeRepository, repository, text }: GitHubBoxProps) => {
   const handleClick = () => {
     window.open(`${repository}`, "_blank");
   };
@@ -22,9 +23,9 @@ const GitHubBoxComponent = ({ typeRepository, repository }: GitHubBoxProps) => {
           </svg>
         </div>
         <div className="cube">
-          <p className="side front">{typeRepository}</p>
+          <p className="side front">{text}</p>
           <p onClick={handleClick} className="side top">
-            check it on github
+            {typeRepository}
           </p>
         </div>
       </div>
