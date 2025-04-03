@@ -92,14 +92,14 @@ export const projects: ProjectInterface[] = [
     description:
       "Vortextream is a website that covers most of the audiovisual content consumed today. From reviews and information on your favorite movies or anime, to live streaming with your favorite twitch streamers!",
     img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1743568894/Vortextream_heerfi.png",
-    link: "",
+    link: "https://vortextreaming.netlify.app/",
     type: "web",
   },
   {
     name: "CloseToYou",
     description:
       "CloseToYou is a mobile application for you to save your contacts where you can save more than just a number or a name, you can personalize your contact with the photo of your choice and save their location... just in case you forgot it!",
-    img: "",
+    img: [''],
     link: "https://github.com/Alejo-develop/CloseToYou-app.git",
     type: "mobile",
   },
@@ -107,7 +107,19 @@ export const projects: ProjectInterface[] = [
     name: "Cashify",
     description:
       "Cashify is a mobile wallet application to put all your monthly money management in one place. Here you can not only save how much money you spend per month, but also how much you earn! and with that you can budget for a trip, for your house, for your hobbies or for anything you want! ",
-    img: "",
+    img: [
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688701/login_mvcvca.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688712/SignUp_hicsce.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688721/MenuFirstLog_hmamha.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688743/WalletModalFirstLog_zfszel.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688769/MenuWithCategory_q60itg.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688781/ModalInfoCateogry_rifxqa.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688809/MenuWallet_gm1plk.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688819/CreateBudget_yarckd.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688824/createTransaction_ukoocw.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688827/TransactionsScreen_yr3tyv.jpg",
+      "https://res.cloudinary.com/djqwo9izl/image/upload/v1743688834/DetailsTransactions_pltorr.jpg",
+    ],
     link: "https://github.com/Alejo-develop/walletapp-mobile.git",
     type: "mobile",
   },
@@ -115,7 +127,7 @@ export const projects: ProjectInterface[] = [
     name: "TaskManager",
     description:
       "TaskManager is a mobile app (still under development) to manage your habits, challenges or purposes. With an interactive interface, this app aims to be a smart task manager where you can save not only the frequency in which you do your things, but also an app where you can see your way to success by watching your constant progress.",
-    img: "",
+    img: [''],
     link: "https://github.com/Alejo-develop/TaskManager-app.git",
     type: "mobile",
   },

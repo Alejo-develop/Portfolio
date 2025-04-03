@@ -37,7 +37,7 @@ const StyledWrapper = styled.div`
   .button-icon {
     display: flex;
     width: 42.5%;
-    height: 3.2rem;
+    height: 3rem;
     cursor: pointer;
   }
 
@@ -68,7 +68,7 @@ const StyledWrapper = styled.div`
 
   .side {
     position: absolute;
-    height: 3.2rem;
+    height: 3rem;
     width: 27.8rem;
     display: flex;
     font-size: 0.8em;
@@ -77,6 +77,7 @@ const StyledWrapper = styled.div`
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: bold;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   }
 
   .top {

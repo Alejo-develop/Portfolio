@@ -1,0 +1,56 @@
+.img-slider {
+  height: 100%;
+  width: 400px;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.img {
+  height: 16rem;
+  object-fit: cover;
+}
+
+.modal {
+  /* style */
+
+  /* body */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 92vh;
+  width: 55rem;
+
+  /* position */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.backgroundModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.imgView {
+  height: 42.5rem;
+  width: 19rem;
+  object-fit: cover;
+}
+
+.arrowBack {
+  color: white;
+  align-self: flex-start;
+  padding-left: 2rem;
+  font-size: 1.3rem;  
+  cursor: pointer;
+}
