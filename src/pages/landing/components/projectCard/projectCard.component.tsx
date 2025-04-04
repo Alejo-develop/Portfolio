@@ -1,5 +1,5 @@
 import SliderImgComponent from "../../../../components/sliderImg/sliderImg.component";
-import { ProjectInterface } from "../../../../interfaces/projects.interface";
+import { ImgMobile, ProjectInterface } from "../../../../interfaces/projects.interface";
 import GitHubBoxComponent from "../gitHubBox/gitHubBox.component";
 import "./projectCard.css";
 
@@ -31,7 +31,7 @@ const ProjectCardComponent = ({
             <img className="img-web-project" src={img as string} alt="" />
           ) : (
             <div>
-              <SliderImgComponent data={img as string[]} />
+              <SliderImgComponent data={img as ImgMobile[]} />
             </div>
           )}
         </div>

@@ -5,7 +5,7 @@ export const sliderSettings = {
   slidesToShow: 4,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  arrows: false,
+  arrows: true,
   swipeToSlide: true,
   swipe: true,
   touchMove: true,
