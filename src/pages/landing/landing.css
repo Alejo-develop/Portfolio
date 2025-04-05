@@ -476,11 +476,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  .title-mySkills{
+  .title-mySkills {
     font-size: 34px;
   }
 
-  .mySkills-div{
+  .mySkills-div {
     padding-top: 5vh;
   }
 }
@@ -509,10 +509,16 @@
   text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
-.container-projects{
+.container-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 1rem;
   gap: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .projects-title {
+    font-size: 23px;
+  }
 }

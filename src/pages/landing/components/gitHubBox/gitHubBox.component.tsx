@@ -6,7 +6,11 @@ interface GitHubBoxProps {
   repository: string;
 }
 
-const GitHubBoxComponent = ({ typeItem: typeRepository, repository, text }: GitHubBoxProps) => {
+const GitHubBoxComponent = ({
+  typeItem: typeRepository,
+  repository,
+  text,
+}: GitHubBoxProps) => {
   const handleClick = () => {
     window.open(`${repository}`, "_blank");
   };
@@ -59,7 +63,7 @@ const StyledWrapper = styled.div`
   }
 
   .button-icon:hover {
-    border-color:rgb(131, 4, 153);
+    border-color: rgb(131, 4, 153);
   }
 
   .button-icon:hover .cube {
@@ -90,6 +94,13 @@ const StyledWrapper = styled.div`
     background: #222229;
     color: white;
     transform: translate3d(0, 0, 1em);
+  }
+
+  @media screen and (max-width: 600px) {
+    .side {
+      width: 14.9rem;
+          font-size: 0.7rem;
+    }
   }
 `;
 

@@ -48,7 +48,7 @@
 }
 
 .project-section-info {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   background-color: black;
@@ -102,4 +102,42 @@
 .links-projects-div {
   display: flex;
   align-items: flex-end;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  .project-card {
+    width: 17.5rem;
+    height: 24rem;
+    padding-left: 1.5rem;
+    grid-template-rows: 0.1fr 1.7fr 0.2fr;
+  }
+
+  .project-name {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  .project-section-info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .sectionSlider-projectCard{
+    width: 17.7rem;
+    height: 10rem;
+  }
+
+  .project-section-info{
+    height: 90%;
+  }
+
+  .sectionInfo-Project-card {
+    height: 100%;
+  }
+
+  .description-project-card {
+    font-size: 10px;
+    padding: 13px;
+  }
 }

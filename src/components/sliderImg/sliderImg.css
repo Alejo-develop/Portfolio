@@ -1,5 +1,5 @@
 .slider {
- padding-top: 15px;
+  padding-top: 15px;
 }
 
 .img-slider {
@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
 }
 
@@ -67,6 +67,73 @@
   align-self: flex-start;
   padding-left: 4rem;
   padding-top: 2rem;
-  font-size: 1.3rem;  
+  font-size: 1.3rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .img-slider {
+    height: 80%;
+  }
+
+  .img {
+    height: 8.9rem;
+    object-fit: cover;
+  }
+
+  .modal {
+    height: 72vh;
+    width: 21rem;
+    top: 14%;
+    left: 9.5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 1.5rem;
+  }
+
+  .arrowBack {
+    font-size: 1.1rem;
+    padding-left: 2rem;
+  }
+
+  .containerInfo-ImgMobile{
+    flex-direction: column;
+  }
+
+  .imgView {
+    height: 25.5rem;
+    width: 13rem;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  
+  .modal {
+    height: 72vh;
+    width: 19rem;
+    top: 14%;
+    left: 9.5%;
+  }
+  
+  .arrowBack {
+    font-size: 0.9rem;
+    padding-left: 2rem;
+  }
+
+  .containerInfo-ImgMobile{
+    gap: 2rem;
+  }
+
+  .imgView {
+    height: 20.5rem;
+    width: 9rem;
+    object-fit: cover;
+  }
+  
+  .title-imgMobileProject {
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+  }
 }
