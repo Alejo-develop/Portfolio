@@ -96,10 +96,17 @@ const StyledWrapper = styled.div`
     transform: translate3d(0, 0, 1em);
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1024px) {
+    .side {
+      width: 32.8rem;
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
     .side {
       width: 14.9rem;
-          font-size: 0.7rem;
+      font-size: 0.7rem;
     }
   }
 `;
