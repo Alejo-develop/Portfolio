@@ -180,11 +180,17 @@
 /* About me Section */
 .aboutMe-div {
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-text-aboutMe {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  padding-top: 2.3rem;
+  gap: 3rem;
 }
 
 .containerParagraph-aboutMe {
@@ -210,13 +216,44 @@
 
 .text-aboutMe {
   text-align: center;
-  width: 40rem;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 17px;
+  width: 35rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
   font-weight: 100;
   letter-spacing: 1px;
   line-height: 1.3;
   text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.container-studies-softSkills {
+  display: grid;
+  grid-auto-rows: 0.8fr 1.2fr;
+  grid-template-columns: 1fr;
+}
+
+.container-studies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title-studies-section {
+  font-size: 23px;
+  color: white;
+  font-weight: 700;
+}
+
+.container-softSkills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.soft-skills-div{
+  display: flex;
+  gap: 2rem;
 }
 
 /* Responsive */

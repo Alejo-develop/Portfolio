@@ -4,7 +4,6 @@ import { StudiesInterface } from "../../../../interfaces/studies.interface";
 interface StudiesCardProps extends StudiesInterface {}
 
 const StudiesCardComponent = ({
-  background,
   duration,
   img,
   studie,
@@ -33,9 +32,6 @@ const StudiesCardComponent = ({
             </div>
           </div>
         </div>
-        <div className="background">
-          <p className="background-text">{background}</p>
-        </div>
       </div>
     </StyledWrapper>
   );
@@ -43,9 +39,9 @@ const StudiesCardComponent = ({
 
 const StyledWrapper = styled.div`
   .card {
-    width: 420px;
+    width: 405px;
     border-radius: 1rem;
-    background-color: rgba(31, 41, 55, 1);
+    background-color: #121212;
     padding: 0.6rem;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -70,8 +66,8 @@ const StyledWrapper = styled.div`
   }
 
   .image {
-    height: 5rem;
-    width: 5rem;
+    height: 4.5rem;
+    width: 4.5rem;
     border-radius: 0.5rem;
     background-color: rgb(118, 36, 194);
     background: linear-gradient(
