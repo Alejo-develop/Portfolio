@@ -190,11 +190,10 @@
   justify-content: flex-start;
   align-items: center;
   padding-top: 2.3rem;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .containerParagraph-aboutMe {
-  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,24 +250,25 @@
   gap: 2rem;
 }
 
-.soft-skills-div{
+.soft-skills-div {
   display: flex;
   gap: 2rem;
 }
 
 /* Responsive */
-
 @media screen and (max-width: 1270px) {
+  .aboutMe-div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+  }
+
   .title-aboutMe {
     font-size: 35px;
   }
 
   .text-aboutMe {
-    font-size: 15px;
-  }
-
-  .aboutMe-div {
-    gap: 10px;
+    font-size: 22px;
   }
 
   .containerParagraph-aboutMe {
@@ -278,6 +278,10 @@
 }
 
 @media screen and (max-width: 720px) {
+  .container-softSkills {
+    display: none;
+  }
+
   .title-aboutMe {
     font-size: 30px;
   }
@@ -301,157 +305,41 @@
 }
 
 @media screen and (max-width: 450px) {
+  .aboutMe-div{
+    height: 80vh;
+  }
+  
   .title-aboutMe {
     font-size: 25px;
   }
 
   .text-aboutMe {
+    font-size: 11px;
+    width: 20rem;
+  }
+
+  .container-studies{
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .title-studies-section{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 376px){
+  .text-aboutMe {
     font-size: 10px;
     width: 20rem;
   }
-}
 
-@media screen and (max-width: 500px) and (min-height: 800px) {
-  .title-aboutMe {
-    font-size: 35px;
+  .title-studies-section{
+    font-size: 15px;
   }
 
-  .text-aboutMe {
-    font-size: 14px;
-    width: 20rem;
-  }
-
-  .containerParagraph-aboutMe {
-    height: 50vh;
-    gap: 30px;
-  }
-
-  .aboutMe-div {
-    gap: 1.5rem;
-    height: 90vh;
-    justify-content: flex-start;
-    padding-top: 4rem;
-  }
-}
-
-@media screen and (max-width: 500px) and (max-height: 800px) {
-  .title-aboutMe {
-    font-size: 30px;
-  }
-
-  .text-aboutMe {
-    font-size: 12px;
-    width: 20rem;
-  }
-
-  .containerParagraph-aboutMe {
-    height: 50vh;
-    gap: 30px;
-  }
-
-  .aboutMe-div {
-    gap: 1.5rem;
-    height: 90vh;
-    justify-content: flex-start;
-    padding-top: 4rem;
-  }
-}
-
-@media screen and (min-width: 700px) and (min-height: 1000px) {
-  .title-aboutMe {
-    font-size: 40px;
-  }
-
-  .text-aboutMe {
-    font-size: 19px;
-    width: 30rem;
-  }
-
-  .containerParagraph-aboutMe {
-    height: 40vh;
-    gap: 30px;
-  }
-
-  .aboutMe-div {
-    gap: 3rem;
-    height: 90vh;
-    justify-content: flex-start;
-    padding-top: 2rem;
-  }
-}
-
-@media screen and (min-width: 800px) and (min-height: 1000px) {
-  .title-aboutMe {
-    font-size: 45px;
-  }
-
-  .text-aboutMe {
-    font-size: 24px;
-    width: 34rem;
-  }
-
-  .containerParagraph-aboutMe {
-    height: 40vh;
-    gap: 30px;
-  }
-
-  .aboutMe-div {
-    gap: 5rem;
-    height: 90vh;
-    justify-content: flex-start;
-    padding-top: 2rem;
-  }
-}
-
-@media screen and (min-width: 1000px) and (min-height: 1000px) {
-  .title-aboutMe {
-    font-size: 55px;
-  }
-
-  .text-aboutMe {
-    font-size: 28px;
-    width: 45rem;
-  }
-
-  .containerParagraph-aboutMe {
-    height: 40vh;
-    gap: 50px;
-  }
-
-  .aboutMe-div {
-    gap: 7rem;
-    height: 90vh;
-    justify-content: flex-start;
-    padding-top: 2rem;
-  }
-}
-
-@media screen and (max-width: 1000px) and (min-height: 1300px) {
-  .title-aboutMe {
-    font-size: 55px;
-  }
-
-  .text-aboutMe {
-    font-size: 28px;
-    width: 45rem;
-  }
-
-  .containerParagraph-aboutMe {
-    height: 40vh;
-    gap: 50px;
-  }
-
-  .aboutMe-div {
-    gap: 7rem;
-    height: 90vh;
-    justify-content: flex-start;
-    padding-top: 2rem;
-  }
-}
-
-@media screen and (max-width: 720px) and (min-height: 650px) {
-  .aboutMe-div {
-    gap: 2rem;
+  .container-studies{
+    gap: 0.5rem;
   }
 }
 
@@ -460,7 +348,7 @@
 @media screen and (max-width: 950px) and (max-height: 500px) {
   .aboutMe-div {
     gap: 2rem;
-    height: 140vh;
+    height: auto;
   }
 
   .title-aboutMe {
@@ -473,18 +361,15 @@
   }
 }
 
-@media screen and (min-width: 1300px) and (min-height: 1000px) {
-  .title-aboutMe {
-    font-size: 40px;
-  }
-
-  .text-aboutMe {
-    font-size: 24px;
-    width: 41rem;
-  }
-
+@media screen and (max-width: 950px) and (max-height: 400px) {
   .aboutMe-div {
-    gap: 4rem;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 1000px) {
+  .aboutMe-div {
+    height: auto;
   }
 }
 
