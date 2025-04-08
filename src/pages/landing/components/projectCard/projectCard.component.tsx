@@ -1,5 +1,8 @@
 import SliderImgComponent from "../../../../components/sliderImg/sliderImg.component";
-import { ImgMobile, ProjectInterface } from "../../../../interfaces/projects.interface";
+import {
+  ImgMobile,
+  ProjectInterface,
+} from "../../../../interfaces/projects.interface";
 import GitHubBoxComponent from "../gitHubBox/gitHubBox.component";
 import "./projectCard.css";
 

@@ -1,9 +1,10 @@
-import { JSX, useEffect, useRef } from "react";
-import { motion, useInView, useAnimation } from "motion/react";
+import { JSX } from "react";
+import { motion } from "motion/react";
+import useReveal from "./useReveal.hook";
 
 interface RevealProps {
   children: JSX.Element;
-  width: "fit-content" | "100%";
+  width?: "fit-content" | "100%";
   animationColor?: boolean;
 }
 
@@ -12,21 +13,18 @@ const RevealComponent = ({
   width = "fit-content",
   animationColor = true,
 }: RevealProps) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  const mainControls = useAnimation();
-  const slideControls = useAnimation();
-
-  useEffect(() => {
-    mainControls.start("visible");
-    console.log(true);
-
-    slideControls.start("visible");
-  }, [isInView]);
+  const { ref, mainControls, slideControls, hasIntersected } = useReveal();
 
   return (
-    <div style={{ position: "relative", width, overflow: "hidden" }}>
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        width,
+        overflow: "hidden",
+        visibility: hasIntersected ? "visible" : "hidden",
+      }}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -35,10 +33,12 @@ const RevealComponent = ({
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
+        viewport={{ once: true }}
       >
         {children}
       </motion.div>
-      {animationColor === true && (
+
+      {animationColor && (
         <motion.div
           variants={{
             hidden: { left: 0 },

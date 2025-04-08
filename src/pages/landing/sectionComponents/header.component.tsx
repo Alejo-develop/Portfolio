@@ -31,8 +31,12 @@ const HeaderCompoent = () => {
           </div>
         </div>
         <div className="container-img-header">
-          <RevealComponent width="fit-content">
-            <div className="box-img"></div>
+          <RevealComponent width="100%">
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <div className="box-img">
+                {/* tu imagen o contenido adentro */}
+              </div>
+            </div>
           </RevealComponent>
         </div>
       </div>
