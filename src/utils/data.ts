@@ -10,6 +10,11 @@ import { SkillsInterface, SoftSkillInterface } from "../interfaces/skills.interf
 import { StudiesInterface } from "../interfaces/studies.interface";
 import { ProjectInterface } from "../interfaces/projects.interface";
 
+export const imgYeyo: string[] = [
+  'https://res.cloudinary.com/djqwo9izl/image/upload/v1744217338/yeyo1_jgc7ql.png',
+  'https://res.cloudinary.com/djqwo9izl/image/upload/v1744218481/yeyo2_hvamg3.png'
+] 
+
 export const aboutMeData = {
   title: "Who am I?",
   paragraph1:

@@ -1,8 +1,17 @@
 import { TypeAnimation } from "react-type-animation";
 import NavbarComponent from "../../../components/navbar/navbar.component";
 import RevealComponent from "../../../components/reveal/reveal.component";
+import { imgYeyo } from "../../../utils/data";
+import { useEffect, useState } from "react";
 
 const HeaderCompoent = () => {
+  const [img, setRandomImg] = useState<string>(imgYeyo[0]);
+
+  useEffect(() => {
+    const randomImg = imgYeyo[Math.floor(Math.random() * imgYeyo.length)]
+    setRandomImg(randomImg)
+  })
+
   return (
     <div className="header">
       <NavbarComponent />
@@ -38,7 +47,7 @@ const HeaderCompoent = () => {
           <RevealComponent>
             <div className="container-img-toReveal">
               <div className="box-img">
-                {/* tu imagen o contenido adentro */}
+                <img src={img} alt="img-header" className="img-header" />
               </div>
             </div>
           </RevealComponent>
