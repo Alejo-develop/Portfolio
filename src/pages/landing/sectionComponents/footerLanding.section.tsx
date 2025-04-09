@@ -5,7 +5,7 @@ const FooterSection = () => {
   return (
     <RevealComponent animationColor={false} width="100%">
       <footer className="container-footer">
-        <div style={{textAlign: 'center', gap: '10px'}}>
+        <div style={{ textAlign: "center", gap: "10px" }}>
           <p className="title-footer">Alejo-Develop</p>
           <p className="subtitle-footer">yeyito872@gmail.com</p>
         </div>

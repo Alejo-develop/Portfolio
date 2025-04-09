@@ -6,27 +6,44 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SocialMediaLinks } from "../../../../utils/data";
 
 const SocialMediaBox = () => {
   return (
     <StyledWrapper>
       <div className="card">
-        <a href="#" className="socialContainer containerOne">
+        <a
+          href={SocialMediaLinks.whatsapp}
+          target="_blank"
+          className="socialContainer containerOne"
+        >
           <FontAwesomeIcon
             icon={faWhatsapp}
             className="socialSvg instagramSvg"
           />
         </a>
-        <a href="#" className="socialContainer containerTwo">
+        <a
+          href={SocialMediaLinks.gitHub}
+          target="_blank"
+          className="socialContainer containerTwo"
+        >
           <FontAwesomeIcon icon={faGithub} className="socialSvg instagramSvg" />
         </a>
-        <a href="#" className="socialContainer containerThree">
+        <a
+          href={SocialMediaLinks.linkedin}
+          target="_blank"
+          className="socialContainer containerThree"
+        >
           <FontAwesomeIcon
             icon={faLinkedin}
             className="socialSvg instagramSvg"
           />
         </a>
-        <a href="#" className="socialContainer containerFour">
+        <a
+          href={SocialMediaLinks.instagram}
+          target="_blank"
+          className="socialContainer containerFour"
+        >
           <FontAwesomeIcon
             icon={faInstagram}
             className="socialSvg instagramSvg"
@@ -63,7 +80,7 @@ const StyledWrapper = styled.div`
   }
   /* Whatsapp*/
   .containerOne:hover {
-    background-color:rgb(32, 192, 91);
+    background-color: rgb(32, 192, 91);
     transition-duration: 0.3s;
   }
   /* Git-Hub*/
@@ -109,6 +126,16 @@ const StyledWrapper = styled.div`
       transform: translateY(0);
       opacity: 1;
     }
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 760px) {
+    padding: 2px 2px;
+  }
+
+  .socialContainer {
+    width: 40px;
+    height: 40px;
   }
 `;
 

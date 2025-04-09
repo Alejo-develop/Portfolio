@@ -522,4 +522,27 @@
 .copyright {
   color: white;
   font-weight: 700;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px){
+  .title-footer {
+    font-size: 30px;
+  } 
+}
+
+@media screen and (max-width: 760px){
+  .title-footer {
+    font-size: 20px;
+  } 
+
+  .subtitle-footer{
+    font-size: 10px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
 }

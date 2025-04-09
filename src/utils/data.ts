@@ -15,6 +15,13 @@ export const imgYeyo: string[] = [
   'https://res.cloudinary.com/djqwo9izl/image/upload/v1744218481/yeyo2_hvamg3.png'
 ] 
 
+export const SocialMediaLinks = {
+  whatsapp: 'https://wa.me/+573243165096',
+  gitHub: 'https://github.com/Alejo-develop',
+  linkedin: 'https://www.linkedin.com/in/alejandro-vergara-zapata-267238213/',
+  instagram: 'https://www.instagram.com/a.lej.o?igsh=MTdtbDNsYXZpZXF1Nw==',
+}
+
 export const aboutMeData = {
   title: "Who am I?",
   paragraph1:

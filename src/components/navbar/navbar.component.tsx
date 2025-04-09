@@ -7,6 +7,7 @@ import {
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RevealComponent from "../reveal/reveal.component";
+import { SocialMediaLinks } from "../../utils/data";
 
 const NavbarComponent = () => {
   return (
@@ -31,18 +32,18 @@ const NavbarComponent = () => {
       </nav>
       <div className="div-social-media">
         <RevealComponent width="fit-content" animationColor={false}>
-          <a href="https://wa.me/+573243165096" target="_blank">
+          <a href={SocialMediaLinks.whatsapp} target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} className="icon" />
           </a>
         </RevealComponent>
         <RevealComponent width="fit-content" animationColor={false}>
-          <a href="https://github.com/Alejo-develop" target="_blank">
+          <a href={SocialMediaLinks.gitHub} target="_blank">
             <FontAwesomeIcon icon={faGithub} className="icon" />
           </a>
         </RevealComponent>
         <RevealComponent width="fit-content" animationColor={false}>
           <a
-            href="https://www.linkedin.com/in/alejandro-vergara-zapata-267238213/"
+            href={SocialMediaLinks.linkedin}
             target="_blank"
           >
             <FontAwesomeIcon icon={faLinkedin} className="icon" />
@@ -50,7 +51,7 @@ const NavbarComponent = () => {
         </RevealComponent>
         <RevealComponent width="fit-content" animationColor={false}>
           <a
-            href="https://www.instagram.com/a.lej.o?igsh=MTdtbDNsYXZpZXF1Nw=="
+            href={SocialMediaLinks.instagram}
             target="_blank"
           >
             <FontAwesomeIcon icon={faInstagram} className="icon" />
