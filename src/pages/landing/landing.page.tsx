@@ -3,6 +3,7 @@ import HeaderCompoent from "./sectionComponents/header.component";
 import SkillsSectionComponent from "./sectionComponents/skills.component";
 import "./landing.css";
 import ProjectsSectionComponent from "./sectionComponents/projects.components";
+import FooterSection from "./sectionComponents/footerLanding.section";
 
 export default function LandingPage() {
   return (
@@ -11,6 +12,7 @@ export default function LandingPage() {
       <AboutMeComponent />
       <SkillsSectionComponent />
       <ProjectsSectionComponent />
+      <FooterSection />
     </div>
   );
 }

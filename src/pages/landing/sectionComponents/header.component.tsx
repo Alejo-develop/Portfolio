@@ -9,10 +9,14 @@ const HeaderCompoent = () => {
       <div className="container-header">
         <div className="container-info-header">
           <RevealComponent width="fit-content">
-            <h1 className="title-header">Alejo-Develop</h1>
+            <div className="container-reveal-title-header">
+              <h1 className="title-header">Alejo-Develop</h1>
+            </div>
           </RevealComponent>
           <RevealComponent width="fit-content">
-            <h4 className="subtitle-header">Fullstack Developer</h4>
+            <div className="container-reveal-subtitle-header">
+              <h4 className="subtitle-header">Fullstack Developer</h4>
+            </div>
           </RevealComponent>
           <div style={{ textAlign: "center" }}>
             <RevealComponent width="fit-content">
@@ -31,8 +35,8 @@ const HeaderCompoent = () => {
           </div>
         </div>
         <div className="container-img-header">
-          <RevealComponent width="100%">
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <RevealComponent>
+            <div className="container-img-toReveal">
               <div className="box-img">
                 {/* tu imagen o contenido adentro */}
               </div>

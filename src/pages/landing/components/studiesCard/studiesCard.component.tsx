@@ -45,16 +45,12 @@ const StyledWrapper = styled.div`
     padding: 0.6rem;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    margin: 16px
   }
 
   .card:hover {
-    transform: scale(1.05); /* Hace que se agrande un poco */
-    box-shadow: 0px 4px 20px rgba(118, 36, 194, 0.6); /* Sombra luminosa */
-    background: linear-gradient(
-      to bottom right,
-      rgb(39, 53, 79),
-      rgb(68, 30, 128)
-    ); /* Leve cambio de color */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    background: var(--secondary-color) 
   }
 
   .infos {
@@ -69,12 +65,6 @@ const StyledWrapper = styled.div`
     height: 4.5rem;
     width: 4.5rem;
     border-radius: 0.5rem;
-    background-color: rgb(118, 36, 194);
-    background: linear-gradient(
-      to bottom right,
-      rgb(118, 36, 194),
-      rgb(185, 128, 240)
-    );
   }
 
   .info {

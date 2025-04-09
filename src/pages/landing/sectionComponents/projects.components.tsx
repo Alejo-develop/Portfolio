@@ -10,15 +10,17 @@ const ProjectsSectionComponent = () => {
       </RevealComponent>
       <div className="container-projects">
         {projects.map((item, index) => (
-          <RevealComponent>
-            <ProjectCardComponent
-              index={index}
-              name={item.name}
-              description={item.description}
-              img={item.img}
-              type={item.type}
-              link={item.link}
-            />
+          <RevealComponent key={index}>
+            <div className="project-card-wrapper">
+              <ProjectCardComponent
+                index={index}
+                name={item.name}
+                description={item.description}
+                img={item.img}
+                type={item.type}
+                link={item.link}
+              />
+            </div>
           </RevealComponent>
         ))}
       </div>
