@@ -341,23 +341,33 @@
   }
 
   .containerParagraph-aboutMe {
-    gap: 25px;
+    gap: 18px;
     min-height: 40vh;
   }
 
   .aboutMe-div {
     gap: 0px;
-    height: 90vh;
+    height: 100vh;
     justify-content: flex-start;
     padding-top: 4rem;
+  }
+
+  .title-studies-section {
+    font-size: 19px;
+  }
+
+  .container-studies{
+    justify-content: flex-end;
+  }
+
+  .container-text-aboutMe{
+    padding-top: 0rem;
+    gap: 0rem;
+    justify-content: flex-start;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .aboutMe-div {
-    height: 80vh;
-  }
-
   .title-aboutMe {
     font-size: 25px;
   }
@@ -444,6 +454,13 @@
 
 .title-mySkills:hover {
   text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.55);
+}
+
+@media screen and (max-width: 1024px) {
+  .mySkills-div{
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
