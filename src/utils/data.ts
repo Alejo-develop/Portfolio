@@ -6,21 +6,24 @@ import {
   faPython,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
-import { SkillsInterface, SoftSkillInterface } from "../interfaces/skills.interface";
+import {
+  SkillsInterface,
+  SoftSkillInterface,
+} from "../interfaces/skills.interface";
 import { StudiesInterface } from "../interfaces/studies.interface";
 import { ProjectInterface } from "../interfaces/projects.interface";
 
 export const imgYeyo: string[] = [
-  'https://res.cloudinary.com/djqwo9izl/image/upload/v1744217338/yeyo1_jgc7ql.png',
-  'https://res.cloudinary.com/djqwo9izl/image/upload/v1744218481/yeyo2_hvamg3.png'
-] 
+  "https://res.cloudinary.com/djqwo9izl/image/upload/v1744217338/yeyo1_jgc7ql.png",
+  "https://res.cloudinary.com/djqwo9izl/image/upload/v1744218481/yeyo2_hvamg3.png",
+];
 
 export const SocialMediaLinks = {
-  whatsapp: 'https://wa.me/+573243165096',
-  gitHub: 'https://github.com/Alejo-develop',
-  linkedin: 'https://www.linkedin.com/in/alejandro-vergara-zapata-267238213/',
-  instagram: 'https://www.instagram.com/a.lej.o?igsh=MTdtbDNsYXZpZXF1Nw==',
-}
+  whatsapp: "https://wa.me/+573243165096",
+  gitHub: "https://github.com/Alejo-develop",
+  linkedin: "https://www.linkedin.com/in/alejandro-vergara-zapata-267238213/",
+  instagram: "https://www.instagram.com/a.lej.o?igsh=MTdtbDNsYXZpZXF1Nw==",
+};
 
 export const aboutMeData = {
   title: "Who am I?",
@@ -39,8 +42,7 @@ export const studies: StudiesInterface[] = [
     img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1742663052/riwi_io_logo_a7c6gg.jpg",
     duration: "1 Year",
     studieType: "Bootcamp",
-    background:
-      ''
+    background: "",
   },
 ];
 
@@ -129,7 +131,44 @@ export const projects: ProjectInterface[] = [
     name: "CloseToYou",
     description:
       "CloseToYou is a mobile application for you to save your contacts where you can save more than just a number or a name, you can personalize your contact with the photo of your choice and save their location... just in case you forgot it!",
-    img: [{ img: "", title: "" }],
+    img: [
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303745/login_mqrlef.jpg",
+        title: "Login",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303748/signUp_qeid2g.jpg",
+        title: "Sign Up",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303746/Started1_vsu2qf.jpg",
+        title: "Start screen 1",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303748/Started2_mxooif.jpg",
+        title: "Start screen 2",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303745/menuWithoutcontacts_wknrwq.jpg",
+        title: "Menu without Contacts",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303747/menuWithcContacts_ljrmkw.jpg",
+        title: "Menu list Contacts",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303745/DetailContact_ero0zt.jpg",
+        title: "Detail Contact",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303745/createContact_ghgooq.jpg",
+        title: "Create Contact",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744303745/menuUser_pgxdk5.jpg",
+        title: "Menu User",
+      },
+    ],
     link: "https://github.com/Alejo-develop/CloseToYou-app.git",
     type: "mobile",
   },
@@ -190,7 +229,40 @@ export const projects: ProjectInterface[] = [
     name: "TaskManager",
     description:
       "TaskManager is a mobile app (still under development) to manage your habits, challenges or purposes. With an interactive interface, this app aims to be a smart task manager where you can save not only the frequency in which you do your things, but also an app where you can see your way to success by watching your constant progress.",
-    img: [{ img: "", title: "" }],
+    img: [
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744300391/Login_vqbhnv.jpg",
+        title: "Login",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744300392/signup_j8fbu4.jpg",
+        title: "Sign Up",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744300391/menu_nipgdr.jpg",
+        title: "Menu",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744300392/create_item_Habit_ynfrsh.jpg",
+        title: "Create Item (Habit)",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744300391/Create_item_Challenge_e1wmny.jpg",
+        title: "Create item (Challenge)",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744300391/Search_items_by_category_screen_xnejvu.jpg",
+        title: "Search items by Category",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744300391/items_by_category_fej07m.jpg",
+        title: "List Item",
+      },
+      {
+        img: "https://res.cloudinary.com/djqwo9izl/image/upload/v1744300392/item_detail_modal_vybzr0.jpg",
+        title: "Item Detail",
+      },
+    ],
     link: "https://github.com/Alejo-develop/TaskManager-app.git",
     type: "mobile",
   },
